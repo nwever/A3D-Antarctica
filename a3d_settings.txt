@@ -1,0 +1,19 @@
+# Coordinates of upper left and lower right corners of required DEM in EPSG:3031
+ulx=-1557000
+uly=13000
+lrx=-1359000
+lry=-124000
+cellsize=1000
+
+# Input/output files
+SNOWPACK_pts="SNOWPACK.pts"
+SNOWPACK_sims_dir="/pl/active/icesheetsclimate/IDS_Antarctica/zip/"
+SNOWPACK_sims_suffix="_MERRA2"
+input_grids_prefix="./input/surface-grids/domain"
+snofile_grids_prefix="./input/snowfiles/"
+
+# Path to required scripts
+create_sno_from_profile_script="/projects/nawe3645/src/polarsnowpack_repo/snowpack/Source/snowpack/tools/create_sno_from_profile_oldawk.sh"
+
+# A3D settings
+startdate="2019-01-01T00:00"
