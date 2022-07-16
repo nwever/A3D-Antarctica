@@ -12,6 +12,7 @@ SNOWPACK_sims_suffix="_MERRA2"
 meteo_smet_dir="/pl/active/icesheetsclimate/IDS_Antarctica/smet/"
 input_grids_prefix="./input/surface-grids/domain"
 snofile_grids_prefix="./input/snowfiles/"
+meteofiles_prefix="./input/meteo/"
 
 # DEM
 src_dem="IS2_cycle_1_2_3_DEM_noFilter.tif"
