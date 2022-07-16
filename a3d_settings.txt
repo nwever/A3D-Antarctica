@@ -4,7 +4,7 @@ uly=650000
 lrx=2020000
 lry=-780000
 cellsize=30000
-meteo_margin = 50000		# Margin to include meteo stations outside the domain to avoid discontinuities at the boundaries
+meteo_margin=50000		# Margin to include meteo stations outside the domain to avoid discontinuities at the boundaries
 
 # Input/output files
 SNOWPACK_pts="SNOWPACK.pts"
@@ -14,6 +14,7 @@ meteo_smet_dir="/pl/active/icesheetsclimate/IDS_Antarctica/smet/"
 input_grids_prefix="./input/surface-grids/domain"
 snofile_grids_prefix="./input/snowfiles/"
 meteofiles_prefix="./input/meteo/"
+setup_prefix="./setup/"
 
 # DEM
 src_dem="IS2_cycle_1_2_3_DEM_noFilter.tif"
@@ -23,3 +24,5 @@ create_sno_from_profile_script="/projects/nawe3645/src/polarsnowpack_repo/snowpa
 
 # A3D settings
 startdate="2019-01-01T00:00"
+enddate="2020-01-01T00:00"
+meteo_buffer=48			# Buffer before and after startdate and endate, respectively, for which to prepare meteo data
