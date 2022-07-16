@@ -4,6 +4,7 @@ uly=650000
 lrx=2020000
 lry=-780000
 cellsize=30000
+meteo_margin = 50000		# Margin to include meteo stations outside the domain to avoid discontinuities at the boundaries
 
 # Input/output files
 SNOWPACK_pts="SNOWPACK.pts"
