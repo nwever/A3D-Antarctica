@@ -31,5 +31,5 @@ do
 	awk -v t1=${startdate_meteo} -v t2=${enddate_meteo} '{if(substr($1,1,16)>=substr(t1,1,16) && substr($1,1,16)<=substr(t2,1,16)) {print}}' ${meteo_smet_dir}/${latitude}_${longitude}.smet >> ${meteofiles_prefix}/${latitude}_${longitude}.smet
 
 	# Add meteo station to list of stations
-	echo "STATION${i} = ${latitude}_${longitude}" >> ${setup_prefix}/stn.lst 
+	echo "STATION${i} = ${latitude}_${longitude}.smet" >> ${setup_prefix}/stn.lst
 done < <(grep -v ^# "${meteofiles_prefix}meteostn.lst")

@@ -23,6 +23,8 @@ src_dem="IS2_cycle_1_2_3_DEM_noFilter.tif"
 create_sno_from_profile_script="/projects/nawe3645/src/polarsnowpack_repo/snowpack/Source/snowpack/tools/create_sno_from_profile_oldawk.sh"
 
 # A3D settings
+experiment_tag="ant"
 startdate="2019-01-01T00:00"
 enddate="2020-01-01T00:00"
 meteo_buffer=48			# Buffer before and after startdate and endate, respectively, for which to prepare meteo data
+a3d_bin_dir="../bin/"

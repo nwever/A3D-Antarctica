@@ -6,5 +6,5 @@ source a3d_settings.txt
 while read -r idx latitude longitude easting northing
 do
 	zipfile="${latitude}_${longitude}${SNOWPACK_sims_suffix}.zip"
-	unzip -p ${SNOWPACK_sims_dir}/${zipfile} "*.pro" | bash ${create_sno_from_profile_script} "/dev/stdin" ${startdate} > ${snofile_grids_prefix}/${idx}.sno
+	unzip -p ${SNOWPACK_sims_dir}/${zipfile} "*.pro" | bash ${create_sno_from_profile_script} "/dev/stdin" ${startdate} > ${snofile_grids_prefix}/${experiment_tag}_${idx}.sno
 done < <(grep -v ^# ${input_grids_prefix}.lst)
