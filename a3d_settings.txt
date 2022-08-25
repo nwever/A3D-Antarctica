@@ -1,9 +1,9 @@
 # Coordinates of upper left and lower right corners of required DEM in EPSG:3031
-ulx=510000
-uly=650000
-lrx=2020000
-lry=-780000
-cellsize=30000
+ulx=450000
+uly=450000
+lrx=450000
+lry=-450000
+cellsize=15000
 meteo_margin=50000		# Margin to include meteo stations outside the domain to avoid discontinuities at the boundaries
 
 # Input/output files
@@ -25,6 +25,6 @@ create_sno_from_profile_script="/projects/nawe3645/src/polarsnowpack_repo/snowpa
 # A3D settings
 experiment_tag="ant"
 startdate="2019-01-01T00:00"
-enddate="2020-01-01T00:00"
-meteo_buffer=48			# Buffer before and after startdate and endate, respectively, for which to prepare meteo data
+enddate="2022-01-01T00:00"
+meteo_buffer=48			# Buffer before and after startdate and endate, respectively, for which to prepare meteo data (hours)
 a3d_bin_dir="../bin/"
