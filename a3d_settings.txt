@@ -1,5 +1,5 @@
 # Coordinates of upper left and lower right corners of required DEM in EPSG:3031
-ulx=450000
+ulx=-450000
 uly=450000
 lrx=450000
 lry=-450000
